@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4310934ca0.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <header>
+        <nav class="container flex items-center justify-between h-24 px-4 mx-auto">
+            <div class="font-bold">
+                LOGO
+            </div>
+
+            <ul class="flex ml-auto space-x-4">
+                <li>
+                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
+                </li>
+                <li>
+                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
+                </li>
+                <li>
+                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="background: url(src/image/hero.png); height: 450px; background-repeat: no-repeat;">
+        <div class="container flex items-center justify-center h-full px-4 mx-auto">
+            <div>
+                <div class="text-center">
+                    <h1 class="mb-2 text-3xl text-gray-200">Onde você quer ir?</h1>
+                    <p class="text-green-100">Escolha o estado e cidade para achar os melhores resorts.</p>
+                </div>
+
+                <div class="mt-7">
+                    <form class="space-x-5">
+                        <select class="px-3 py-2 text-gray-500 border border-gray-300 rounded bg-gray-50">
+                            <option value="">Escolha o estado</option>
+                        </select>
+                        <select class="px-3 py-2 text-gray-500 border border-gray-300 rounded bg-gray-50">
+                            <option value="">Escolha a cidade</option>
+                        </select>
+
+                        <button class="px-3 py-2 font-medium bg-yellow-500 rounded hover:bg-yellow-700">Pesquisar resorts<i
+                                class="ml-2 fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="container px-4 py-10 mx-auto">
+            <div class="flex">
+                <div class="pr-10">
+                    <h3 class="text-sm font-medium text-gray-400">RESORT EM DESTAQUE</h3>
+                    <h1 class="text-2xl text-gray-600">Ecoresort Praia do Forte Bahia</h1>
+                    <h3 class="mt-2 text-sm font-medium text-gray-400">Hotel qualidade 5 estrelas</h3>
+                    <p class="mt-4 text-sm font-medium text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat nihil libero perspiciatis mollitia eum nulla dolor, quibusdam enim.</p>
+                    <p class="mt-4 text-sm font-medium text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat nihil libero perspiciatis mollitia eum nulla dolor, quibusdam enim.</p>
+               
+                   <div class="mt-5">
+                     <a href="" class="px-3 py-2 font-medium transition-all bg-yellow-500 rounded hover:bg-yellow-600">
+                        Solicitar reservas <i class="pl-1 fa-solid fa-arrow-right"></i>
+                    </a>
+                   </div>
+                </div>
+
+                <div class="flex ml-auto shrink-0">
+                    
+                    <img " src="/src/image/beach.jpg" alt="Foto da praia" width="450px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
