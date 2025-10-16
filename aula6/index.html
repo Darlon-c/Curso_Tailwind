@@ -1,90 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Tailwind</title>
-    <link href="./dist/output.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4310934ca0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailWind Hotel</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4310934ca0.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-50">
+<body class="text-gray-700 bg-gray-100">
 
-    <header>
-        <nav class="container flex items-center justify-between h-24 px-4 mx-auto">
-            <div class="font-bold">
-                LOGO
-            </div>
+  <!-- HEADER -->
+  <header class="border-b border-gray-200">
+    <nav class="container flex flex-wrap items-center justify-between max-w-5xl p-4 mx-auto">
+      <div class="text-xl font-bold">LOGO</div>
+      
+      <ul class="flex flex-wrap justify-center w-full mt-4 space-x-4 text-sm sm:mt-0 sm:w-auto">
+        <li><a href="#" class="block p-2 text-gray-600 hover:text-gray-900 hover:underline">Como reservar</a></li>
+        <li><a href="#" class="block p-2 text-gray-600 hover:text-gray-900 hover:underline">Sobre nós</a></li>
+        <li><a href="#" class="block p-2 text-gray-600 hover:text-gray-900 hover:underline">Informações</a></li>
+        <li><a href="#" class="block p-2 text-gray-600 hover:text-gray-900 hover:underline">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <ul class="flex ml-auto space-x-4">
-                <li>
-                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a>
-                </li>
-                <li>
-                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a>
-                </li>
-                <li>
-                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a>
-                </li>
-                <li>
-                    <a href="" class="p-2 text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HERO -->
+  <main class="bg-center bg-cover" style="background-image: url(src/image/hero.png);">
+    <div class="container flex items-center justify-center h-[450px] max-w-5xl px-4 mx-auto text-center">
+      <div>
+        <h1 class="mb-2 text-3xl font-semibold text-white">Onde você quer ir?</h1>
+        <p class="text-gray-200">Escolha o estado e cidade para achar os melhores resorts.</p>
 
-    <main style="background: url(src/image/hero.png); height: 450px; background-repeat: no-repeat;">
-        <div class="container flex items-center justify-center h-full px-4 mx-auto">
-            <div>
-                <div class="text-center">
-                    <h1 class="mb-2 text-3xl text-gray-200">Onde você quer ir?</h1>
-                    <p class="text-green-100">Escolha o estado e cidade para achar os melhores resorts.</p>
-                </div>
+        <form class="grid grid-cols-1 gap-3 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+          <select class="px-3 py-2 text-gray-700 border border-gray-300 rounded bg-gray-50">
+            <option>Escolha o estado</option>
+          </select>
+          <select class="px-3 py-2 text-gray-700 border border-gray-300 rounded bg-gray-50">
+            <option>Escolha a cidade</option>
+          </select>
+          <button class="px-3 py-2 font-medium text-white bg-yellow-500 rounded hover:bg-yellow-600 sm:col-span-2 lg:col-span-1">
+            Pesquisar resorts <i class="ml-2 fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
 
-                <div class="mt-7">
-                    <form class="space-x-5">
-                        <select class="px-3 py-2 text-gray-500 border border-gray-300 rounded bg-gray-50">
-                            <option value="">Escolha o estado</option>
-                        </select>
-                        <select class="px-3 py-2 text-gray-500 border border-gray-300 rounded bg-gray-50">
-                            <option value="">Escolha a cidade</option>
-                        </select>
-
-                        <button class="px-3 py-2 font-medium bg-yellow-500 rounded hover:bg-yellow-700">Pesquisar resorts<i
-                                class="ml-2 fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+  <!-- DESTAQUE -->
+  <section>
+    <div class="container max-w-5xl px-4 py-10 mx-auto">
+      <div class="flex flex-col items-center gap-6 lg:flex-row">
+        <div>
+          <h3 class="text-sm font-medium text-gray-400">RESORT EM DESTAQUE</h3>
+          <h1 class="text-2xl text-gray-700">Ecoresort Praia do Forte Bahia</h1>
+          <h3 class="mt-2 text-sm font-medium text-gray-400">Hotel qualidade 5 estrelas</h3>
+          <p class="mt-4 text-sm text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat.
+          </p>
+          <p class="mt-4 text-sm text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat.
+          </p>
+          <a href="#" class="inline-block px-4 py-2 mt-5 font-medium text-white transition bg-yellow-500 rounded hover:bg-yellow-600">
+            Solicitar reservas <i class="pl-1 fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-    </main>
-
-    <section>
-        <div class="container px-4 py-10 mx-auto">
-            <div class="flex">
-                <div class="pr-10">
-                    <h3 class="text-sm font-medium text-gray-400">RESORT EM DESTAQUE</h3>
-                    <h1 class="text-2xl text-gray-600">Ecoresort Praia do Forte Bahia</h1>
-                    <h3 class="mt-2 text-sm font-medium text-gray-400">Hotel qualidade 5 estrelas</h3>
-                    <p class="mt-4 text-sm font-medium text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat nihil libero perspiciatis mollitia eum nulla dolor, quibusdam enim.</p>
-                    <p class="mt-4 text-sm font-medium text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos similique facere, cum aliquid officia labore iusto blanditiis dignissimos vero quaerat nihil libero perspiciatis mollitia eum nulla dolor, quibusdam enim.</p>
-               
-                   <div class="mt-5">
-                     <a href="" class="px-3 py-2 font-medium transition-all bg-yellow-500 rounded hover:bg-yellow-600">
-                        Solicitar reservas <i class="pl-1 fa-solid fa-arrow-right"></i>
-                    </a>
-                   </div>
-                </div>
-
-                <div class="flex ml-auto shrink-0">
-                    
-                    <img " src="/src/image/beach.jpg" alt="Foto da praia" width="450px">
-                </div>
-            </div>
+        <div class="w-full lg:w-1/2">
+          <img src="/src/image/beach.jpg" alt="Foto da praia" class="object-cover w-full rounded-md shadow-md">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <!-- GALERIA -->
+  <section>
+    <div class="container max-w-5xl px-4 mx-auto">
+      <h3 class="mb-8 text-2xl font-semibold text-center">Conheça mais resorts</h3>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <img src="/src/image/resort1.jpg" alt="resort1" class="object-cover w-full h-64 shadow-md rounded-2xl" />
+        <img src="/src/image/resort2.jpg" alt="resort2" class="object-cover w-full h-64 shadow-md rounded-2xl" />
+        <img src="/src/image/resort3.jpg" alt="resort3" class="object-cover w-full h-64 shadow-md rounded-2xl" />
+        <img src="/src/image/resort4.jpg" alt="resort4" class="object-cover w-full h-64 shadow-md rounded-2xl sm:col-span-2 lg:col-span-1" />
+         <img src="/src/image/resort5.jpg" alt="resort4" class="object-cover w-full h-64 shadow-md rounded-2xl sm:col-span-2 lg:col-span-1" />
+        <img src="/src/image/resort6.jpg" alt="resort4" class="object-cover w-full h-64 shadow-md rounded-2xl sm:col-span-2 lg:col-span-1" />
+     </div>
+    </div>
+  </section>
+
+  <!-- FORM FINAL -->
+  <section class="flex items-center justify-center py-10">
+    <div class="container max-w-5xl px-4 mx-auto">
+      <form class="flex flex-col justify-center gap-3 sm:flex-row sm:space-x-5">
+        <select class="flex-1 px-3 py-2 text-gray-700 border border-gray-300 rounded bg-gray-50">
+          <option>Escolha o estado</option>
+        </select>
+        <select class="flex-1 px-3 py-2 text-gray-700 border border-gray-300 rounded bg-gray-50">
+          <option>Escolha a cidade</option>
+        </select>
+        <button class="px-4 py-2 font-medium text-white bg-yellow-500 rounded hover:bg-yellow-600">
+          Pesquisar resorts <i class="ml-2 fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200">
+    <div class="container flex flex-col items-center justify-between max-w-5xl p-4 mx-auto space-y-3 sm:flex-row sm:space-y-0">
+      <div class="font-bold">LOGO</div>
+      <div class="flex space-x-4 text-lg text-gray-600">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
 </html>
